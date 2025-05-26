@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Santa+Catarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dudka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="intex.html">
+                    <img src="images/Group 32.jpg" alt="Логотип">
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="услуги.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="контакты.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">
+                    <button class="cart-button">
+                        <img src="images/Basket.png" alt="Корзина">
+                        <span class="cart-counter"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Цветы, которые шепчут ночные истории</h1>
+            <p class="hero-subtitle">Радуйте близких по любому поводу</p>
+            <a href="catalog.html" class="hero-button-link">
+                <button class="hero-button">
+                    <span class="hero-button-text">В КАТАЛОГ</span>
+                </button>
+            </a>
+            </button>
+            <div class="hero-image">
+            <img src="images/Ellipse 1.jpg" alt="Цветы">
+            </div>
+        </div>
+        <!-- или для реального изображения:
+        <img src="path-to-image.jpg" alt="Цветы" class="hero-image">
+        -->
+    </section>
+
+    <section class="special-offers">
+        <h2 class="special-offers-title">Специальные предложения</h2>
+        
+        <div class="offers-grid">
+ <!-- Первое предложение -->
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="images/image 8.jpg" alt="Первое предложение">
+                </div>
+                <div class="offer-info">
+                    <span class="offer-name">Ван Гог</span>
+                    <span class="offer-price">5000 руб.</span>
+                </div>
+                <div class="offer-buttons"> <!-- Это должно быть offer-buttons, а не offers-grid -->
+                    <button class="details-btn">подробнее</button>
+                    <button class="cart-btn">в корзину</button>
+                </div>
+            </div>
+            
+            <!-- Второе предложение -->
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="images/image 9.jpg" alt="Второе предложение">
+                </div>
+                <div class="offer-info">
+                    <span class="offer-name">Сказка</span>
+                    <span class="offer-price">6000 руб.</span>
+                </div>
+                <div class="offer-buttons">
+                    <button class="details-btn">подробнее</button>
+                    <button class="cart-btn">в корзину</button>
+                </div>
+            </div>
+            
+            <!-- Третье предложение -->
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="images/image 10.jpg" alt="Третье предложение">
+                </div>
+                <div class="offer-info">
+                    <span class="offer-name">Космос</span>
+                    <span class="offer-price">6500 руб.</span>
+                </div>
+                <div class="offer-buttons">
+                    <button class="details-btn">подробнее</button>
+                    <button class="cart-btn">в корзину</button>
+                </div>
+            </div>
+
+            <!-- Четвертое предложение -->
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="images/image 11.jpg" alt="Четвертое предложение">
+                </div>
+                <div class="offer-info">
+                    <span class="offer-name">Волна</span>
+                    <span class="offer-price">7500 руб.</span>
+                </div>
+                <div class="offer-buttons">
+                    <button class="details-btn">подробнее</button>
+                    <button class="cart-btn">в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hits-section">
+        <h2 class="hits-title">Хиты</h2>
+        
+        <div class="hits-grid">
+            <!-- Первый товар -->
+            <div class="hit-item">
+                <img src="images/image 5.jpg" alt="Мир мечты" class="hit-image">
+                <div class="hit-info">
+                    <span class="hit-name">Мир мечты</span>
+                    <span class="hit-price">7000 руб.</span>
+                </div>
+                <div class="hit-buttons">
+                    <button class="hit-details-btn">подробнее</button>
+                    <button class="hit-cart-btn">в корзину</button>
+                </div>
+            </div>
+            
+            <!-- Второй товар -->
+            <div class="hit-item">
+                <img src="images/image 6.jpg" alt="Зимняя сказка" class="hit-image">
+                <div class="hit-info">
+                    <span class="hit-name">Зимняя сказка</span>
+                    <span class="hit-price">5000 руб.</span>
+                </div>
+                <div class="hit-buttons">
+                    <button class="hit-details-btn">подробнее</button>
+                    <button class="hit-cart-btn">в корзину</button>
+                </div>
+            </div>
+            
+            <!-- Третий товар -->
+            <div class="hit-item">
+                <img src="images/image 7.jpg" alt="Морская симфония" class="hit-image">
+                <div class="hit-info">
+                    <span class="hit-name">Морская симфония</span>
+                    <span class="hit-price">7000 руб.</span>
+                </div>
+                <div class="hit-buttons">
+                    <button class="hit-details-btn">подробнее</button>
+                    <button class="hit-cart-btn">в корзину</button>
+                </div>
+            </div>
+
+            <div class="hit-item">
+                <img src="images/image 12.jpg" alt="Токийский гуль" class="hit-image">
+                <div class="hit-info">
+                    <span class="hit-name">Токийский гуль</span>
+                    <span class="hit-price">11000 руб.</span>
+                </div>
+                <div class="hit-buttons">
+                    <button class="hit-details-btn">подробнее</button>
+                    <button class="hit-cart-btn">в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/Group 33.png" alt="Логотип">
+                    </div>
+                    <div class="footer-name">Букетные фантазии</div>
+                </div>
+                
+                <div class="footer-contacts">
+                    <div class="footer-phone">+7 (911) 923-93-93</div>
+                    
+                    <div class="footer-social">
+                        <div class="telegram-icon">
+                            <img src="images/Vector 4.png" alt="Телеграмм">
+                        </div>
+                        <div class="vk-icon">
+                            <img src="images/VK com (1).png" alt="ВК">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-title">Для клиентов</h3>
+                    <a href="about.html" class="footer-link">О нас</a>
+                    <a href="cart.html" class="footer-link">Доставка и оплата</a>
+                    <a href="контакты.html" class="footer-link">Отзывы клиентов</a>
+                    <a href="контакты.html" class="footer-link">Контакты</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Каталог</h3>
+                    <a href="catalog.html" class="footer-link">Букеты</a>
+                    <a href="catalog.html" class="footer-link">Композиции</a>
+                    <a href="catalog.html" class="footer-link">Упаковка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Глобальный объект корзины
+        const cart = {
+            items: [],
+            addItem(product) {
+                const existingItem = this.items.find(item => item.id === product.id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    this.items.push({...product, quantity: 1});
+                }
+                this.updateCartCounter();
+                this.saveToLocalStorage();
+            },
+            updateCartCounter() {
+                const totalItems = this.items.reduce((sum, item) => sum + item.quantity, 0);
+                document.querySelectorAll('.cart-counter').forEach(el => {
+                    el.textContent = totalItems > 0 ? totalItems : '';
+                    el.style.display = totalItems > 0 ? 'block' : 'none';
+                });
+            },
+            saveToLocalStorage() {
+                localStorage.setItem('cart', JSON.stringify(this.items));
+            },
+            loadFromLocalStorage() {
+                const savedCart = localStorage.getItem('cart');
+                if (savedCart) {
+                    this.items = JSON.parse(savedCart);
+                    this.updateCartCounter();
+                }
+            }
+        };
+    
+        // Загрузка корзины при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            cart.loadFromLocalStorage();
+            
+            // Обработчики для всех кнопок "в корзину"
+            document.querySelectorAll('.cart-btn, .hit-cart-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Находим родительский элемент товара
+                    const productCard = this.closest('.offer-item, .hit-item, .product-card');
+                    
+                    // Получаем данные о товаре
+                    const product = {
+                        id: productCard.dataset.id || Math.random().toString(36).substr(2, 9),
+                        name: productCard.querySelector('.offer-name, .hit-name, .product-name').textContent,
+                        price: parseInt(productCard.querySelector('.offer-price, .hit-price, .product-price').textContent.replace(/\D/g, '')),
+                        image: productCard.querySelector('img').src
+                    };
+                    
+                    // Добавляем товар в корзину
+                    cart.addItem(product);
+                    
+                    // Анимация добавления
+                    animateAddToCart(this, productCard);
+                });
+            });
+        });
+    
+        // Функция анимации добавления в корзину
+        function animateAddToCart(button, productCard) {
+            // Создаем копию изображения товара для анимации
+            const img = productCard.querySelector('img');
+            const imgClone = img.cloneNode(true);
+            
+            // Позиционируем клон
+            imgClone.style.position = 'fixed';
+            imgClone.style.width = '100px';
+            imgClone.style.height = 'auto';
+            imgClone.style.zIndex = '1000';
+            imgClone.style.transition = 'all 0.5s ease-out';
+            imgClone.style.opacity = '0.8';
+            
+            // Получаем координаты
+            const buttonRect = button.getBoundingClientRect();
+            const cartButton = document.querySelector('.cart-button');
+            const cartRect = cartButton.getBoundingClientRect();
+            
+            // Начальная позиция (центр кнопки "в корзину")
+            imgClone.style.left = `${buttonRect.left + buttonRect.width/2 - 50}px`;
+            imgClone.style.top = `${buttonRect.top}px`;
+            
+            // Добавляем на страницу
+            document.body.appendChild(imgClone);
+            
+            // Запускаем анимацию
+            setTimeout(() => {
+                imgClone.style.left = `${cartRect.left + cartRect.width/2 - 50}px`;
+                imgClone.style.top = `${cartRect.top}px`;
+                imgClone.style.width = '30px';
+                imgClone.style.opacity = '0.5';
+            }, 10);
+            
+            // Удаляем после анимации
+            setTimeout(() => {
+                imgClone.remove();
+                
+                // Показываем уведомление
+                showCartNotification('Товар добавлен в корзину');
+            }, 500);
+        }
+    
+        // Функция показа уведомления
+        function showCartNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'cart-notification';
+            notification.textContent = message;
+            
+            // Стилизация уведомления
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.right = '20px';
+            notification.style.backgroundColor = '#55343D';
+            notification.style.color = 'white';
+            notification.style.padding = '15px 25px';
+            notification.style.borderRadius = '30px';
+            notification.style.zIndex = '1000';
+            notification.style.opacity = '0';
+            notification.style.transition = 'opacity 0.3s';
+            
+            document.body.appendChild(notification);
+            
+            // Показываем
+            setTimeout(() => notification.style.opacity = '1', 10);
+            
+            // Скрываем через 3 секунды
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.menu');
+    
+    toggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+});
+    </script>
+
+
+</body>
+</html>

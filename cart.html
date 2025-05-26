@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Букетные фантазии</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Santa+Catarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dudka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="intex.html">
+                    <img src="images/Group 32.jpg" alt="Логотип">
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="услуги.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="контакты.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">
+                    <button class="cart-button">
+                        <img src="images/Basket.png" alt="Корзина">
+                        <span class="cart-counter"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h1 class="cart-title">Корзина</h1>
+        
+        <div class="cart-header">
+            <span class="header-name">Наименование</span>
+            <span class="header-quantity">Количество</span>
+            <span class="header-price">Стоимость</span>
+        </div>
+        <div class="cart-item">
+            <div class="item-image">
+                <img src="images/image 7.jpg" alt="Морская симфония">
+            </div>
+            <div class="item-divider"></div>
+            <div class="item-name">Морская симфония</div>
+            <div class="quantity-controls">
+                <div class="controls-container">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="divider"></span>
+                    <span class="quantity">1</span>
+                    <span class="divider"></span>
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div>
+            <div class="item-price">7000 руб.</div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="total-line">ИТОГО: <span class="total-price">7000 руб.</span></div>
+            <button class="checkout-button">оплатить</button>
+        </div>
+    </main>
+
+    <div class="thank-you-overlay" id="thankYouOverlay">
+        <div class="thank-you-popup">
+            <div class="thank-you-logo">
+                <img src="images/Group 45.png" alt="Логотип">
+            </div>
+            <div class="thank-you-text">Подтверждение и чек успешно высланы вам на почту.</div>
+            <div class="thank-you-title">Благодарим за покупку!</div>
+            <a href="intex.html" class="thank-you-button">На главную</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/Group 33.png" alt="Логотип">
+                    </div>
+                    <div class="footer-name">Букетные фантазии</div>
+                </div>
+                
+                <div class="footer-contacts">
+                    <div class="footer-phone">+7 (911) 923-93-93</div>
+                    
+                    <div class="footer-social">
+                        <div class="telegram-icon">
+                            <img src="images/Vector 4.png" alt="Телеграмм">
+                        </div>
+                        <div class="vk-icon">
+                            <img src="images/VK com (1).png" alt="ВК">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-title">Для клиентов</h3>
+                    <a href="about.html" class="footer-link">О нас</a>
+                    <a href="cart.html" class="footer-link">Доставка и оплата</a>
+                    <a href="контакты.html" class="footer-link">Отзывы клиентов</a>
+                    <a href="контакты.html" class="footer-link">Контакты</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Каталог</h3>
+                    <a href="catalog.html" class="footer-link">Букеты</a>
+                    <a href="catalog.html" class="footer-link">Композиции</a>
+                    <a href="catalog.html" class="footer-link">Упаковка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="payment-overlay" id="paymentOverlay">
+        <div class="payment-popup">
+            <div class="input-field" style="top: 132px;">
+                <input type="text" class="form-input" placeholder="Адрес доставки" data-default="Адрес доставки">
+            </div>
+            <div class="input-field" style="top: 267px;">
+                <input type="text" class="form-input" placeholder="Банковская карта" data-default="Банковская карта">
+            </div>
+            <div class="input-field" style="top: 402px; width: 220px;">
+                <input type="text" class="form-input" placeholder="Срок действия" data-default="Срок действия">
+            </div>
+            <div class="input-field cvv-field" style="top: 402px; left: 1010px; width: 110px;">
+                <input type="text" class="form-input" placeholder="CVV" data-default="CVV">
+            </div>
+            <div class="input-field" style="top: 489px;">
+                <input type="email" class="form-input" placeholder="Email" data-default="Email">
+            </div>
+            <button class="popup-pay-button" id="finalPayButton">оплатить</button>
+        </div>
+    </div>
+
+<script>
+    // Глобальный объект корзины
+    const cart = {
+        items: [],
+        clear() {
+            this.items = [];
+            this.updateCartCounter();
+            this.saveToLocalStorage();
+        },
+        updateCartCounter() {
+            const totalItems = this.items.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelectorAll('.cart-counter').forEach(el => {
+                el.textContent = totalItems > 0 ? totalItems : '';
+                el.style.display = totalItems > 0 ? 'block' : 'none';
+            });
+        },
+        saveToLocalStorage() {
+            localStorage.setItem('cart', JSON.stringify(this.items));
+        },
+        loadFromLocalStorage() {
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                this.items = JSON.parse(savedCart);
+                this.updateCartCounter();
+            }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Загружаем корзину при загрузке страницы
+        cart.loadFromLocalStorage();
+        
+    // Обработчики для управления количеством товаров
+const minusBtn = document.querySelector('.quantity-btn.minus');
+const plusBtn = document.querySelector('.quantity-btn.plus');
+const quantityElement = document.querySelector('.quantity');
+const itemPriceElement = document.querySelector('.item-price');
+const totalPriceElement = document.querySelector('.total-price');
+
+const unitPrice = 7000;
+
+function updatePrices() {
+    const quantity = parseInt(quantityElement.textContent);
+    const totalPrice = unitPrice * quantity;
+    const formattedPrice = totalPrice.toLocaleString('ru-RU') + ' ₽';
+    
+    itemPriceElement.textContent = formattedPrice;
+    totalPriceElement.textContent = formattedPrice;
+}
+
+// Убрали функцию updateDivider() - она больше не нужна
+
+plusBtn.addEventListener('click', function() {
+    let quantity = parseInt(quantityElement.textContent);
+    quantity++;
+    quantityElement.textContent = quantity;
+    updatePrices();
+});
+
+minusBtn.addEventListener('click', function() {
+    let quantity = parseInt(quantityElement.textContent);
+    if (quantity > 1) {
+        quantity--;
+        quantityElement.textContent = quantity;
+        updatePrices();
+    }
+});
+
+// Инициализация
+updatePrices();
+
+        // Обработчики для полей ввода в поп-апе оплаты
+        document.querySelectorAll('.form-input').forEach(input => {
+            const defaultValue = input.getAttribute('data-default');
+            
+            input.addEventListener('focus', function() {
+                if (this.value === '' || this.value === defaultValue) {
+                    this.value = '';
+                }
+            });
+            
+            input.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.value = defaultValue;
+                }
+            });
+            
+            // Инициализация значений
+            input.value = defaultValue;
+        });
+
+        // Обработчик кнопки "оплатить" в корзине
+        document.querySelector('.checkout-button').addEventListener('click', function() {
+            document.getElementById('paymentOverlay').style.display = 'flex';
+        });
+
+        // Закрытие поп-апа оплаты при клике вне его
+        document.getElementById('paymentOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        // Обработчик кнопки "оплатить" в поп-апе оплаты
+        document.getElementById('finalPayButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Валидация полей
+            const inputs = document.querySelectorAll('.form-input');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (input.value === '' || input.value === input.getAttribute('data-default')) {
+                    isValid = false;
+                    input.style.borderBottom = '2px solid red';
+                } else {
+                    input.style.borderBottom = 'none';
+                }
+            });
+            
+            if (isValid) {
+                // Скрываем поп-ап оплаты
+                document.getElementById('paymentOverlay').style.display = 'none';
+                // Очищаем корзину
+                cart.clear();
+                // Показываем поп-ап благодарности
+                document.getElementById('thankYouOverlay').style.display = 'flex';
+            } else {
+                alert('Пожалуйста, заполните все поля корректно!');
+            }
+        });
+
+        // Закрытие поп-апа благодарности при клике вне его
+        document.getElementById('thankYouOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        // Обработчик кнопки "На главную" в поп-апе благодарности
+        document.querySelector('.thank-you-button').addEventListener('click', function() {
+            // Обновляем счетчик перед переходом
+            cart.updateCartCounter();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.menu');
+    
+    toggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+});
+</script>
+</body>
